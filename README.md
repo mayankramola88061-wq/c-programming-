@@ -3,11 +3,11 @@
 /*write a program to input two numbers and display their sum make it look like as begineer has written the coode
 */
 
-#include <stdio.h>
+     #include <stdio.h>
 
-int main()
-{
-    int num1, num2, sum;
+    int main()
+    {
+     int num1, num2, sum;
 
     printf("Enter first number: ");
     scanf("%d", &num1);
@@ -20,7 +20,7 @@ int main()
     printf("The sum is: %d\n", sum);
 
     return 0;
-}
+    }
 //Write a program to input two numbers and display their sum, difference, product, and quotient.
 
 #include <stdio.h>
