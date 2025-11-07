@@ -23,10 +23,10 @@
     }
 //Write a program to input two numbers and display their sum, difference, product, and quotient.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main()
-{
+    int main()
+    {
     int num1, num2;
     int sum, diff, prod;
     float quotient;
@@ -49,4 +49,4 @@ int main()
     printf("Quotient = %.2f\n", quotient);
 
     return 0;
-}
+    }
