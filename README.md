@@ -2,6 +2,7 @@
 // day 1 code 
 /*write a program to input two numbers and display their sum make it look like as begineer has written the coode
 */
+
 #include <stdio.h>
 
 int main()
