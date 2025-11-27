@@ -1727,6 +1727,63 @@ DAY-31
 #include <stdio.h>
 
 int main() {
+    int n, key, found = 0;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter element to search: ");
+    scanf("%d", &key);
+
+    // Linear search
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+//Reverse an array without taking extra space.#include <stdio.h>
+
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // In-place reversal using two pointers
+    int start = 0, end = n - 1;
+
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+
+        start++;
+        end--;
+    }
+
+    printf("Reversed array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+DAY-32
+//Merge two arrays.
+int main() {
     int n1, n2;
 
     printf("Enter size of first array: ");
@@ -1853,3 +1910,412 @@ int main() {
 }
 //Find the digit that occurs the most times in an integer number.Search in a sorted array using binary search.
 
+#include <stdio.h>
+
+int main() {
+    int n1, n2;
+
+    printf("Enter size of first array: ");
+    scanf("%d", &n1);
+
+    int arr1[n1];
+    printf("Enter %d elements of first array:\n", n1);
+    for (int i = 0; i < n1; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Enter size of second array: ");
+    scanf("%d", &n2);
+
+    int arr2[n2];
+    printf("Enter %d elements of second array:\n", n2);
+    for (int i = 0; i < n2; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    int merged[n1 + n2];
+
+    // Copy arr1 into merged
+    for (int i = 0; i < n1; i++) {
+        merged[i] = arr1[i];
+    }
+
+    // Copy arr2 after arr1
+    for (int i = 0; i < n2; i++) {
+        merged[n1 + i] = arr2[i];
+    }
+
+    printf("Merged array:\n");
+    for (int i = 0; i < n1 + n2; i++) {
+        printf("%d ", merged[i]);
+    }
+
+    return 0;
+}
+DAY-33
+//Search in a sorted array using binary search.
+#include <stdio.h>
+
+int main() {
+    int n, key, low, high, mid, found = 0;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements (sorted in ascending order):\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter element to search: ");
+    scanf("%d", &key);
+
+    low = 0;
+    high = n - 1;
+
+    while (low <= high) {
+        mid = (low + high) / 2;
+
+        if (arr[mid] == key) {
+            printf("Element found at position %d\n", mid + 1);
+            found = 1;
+            break;
+        }
+        else if (arr[mid] < key) {
+            low = mid + 1;   // search right half
+        }
+        else {
+            high = mid - 1;  // search left half
+        }
+    }
+
+    if (!found) {
+        printf("Element not found in the array.\n");
+    }
+
+    return 0;
+}
+//#include <stdio.h>
+
+int main() {
+    int n, key;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n + 1];   // extra space for new element
+
+    printf("Enter %d sorted elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter element to insert: ");
+    scanf("%d", &key);
+
+    int i = n - 1;
+
+    // Shift elements to the right until correct position is found
+    while (i >= 0 && arr[i] > key) {
+        arr[i + 1] = arr[i];
+        i--;
+    }
+
+    // Insert the new element
+    arr[i + 1] = key;
+
+    printf("Array after insertion:\n");
+    for (int j = 0; j <= n; j++) {
+        printf("%d ", arr[j]);
+    }
+
+    return 0;
+}
+DAY-34
+//Insert an element in an array at a given position.
+
+#include <stdio.h>
+
+int main() {
+    int n, pos, value;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n + 1]; // extra space for new element
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter position and value to insert: ");
+    scanf("%d %d", &pos, &value);
+
+    // Shift elements to the right
+    for (int i = n; i >= pos; i--) {
+        arr[i] = arr[i - 1];
+    }
+
+    // Insert element at position (1-based index)
+    arr[pos - 1] = value;
+
+    printf("Array after insertion:\n");
+    for (int i = 0; i <= n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+//Delete an element from an array.
+
+#include <stdio.h>
+
+int main() {
+    int n, pos;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter position to delete: ");
+    scanf("%d", &pos);
+
+    // Shift elements left from that position
+    for (int i = pos - 1; i < n - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+
+    // Print updated array (size becomes n−1)
+    printf("Array after deletion:\n");
+    for (int i = 0; i < n - 1; i++) {
+        printf(
+DAY-35
+//Find the second largest element in an array.
+
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int largest = arr[0];
+    int second = -99999999;  // very small number
+
+    // Find largest element
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    // Find second largest element
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > second && arr[i] < largest) {
+            second = arr[i];
+        }
+    }
+
+    printf("%d\n", second);
+
+    return 0;
+}
+//Rotate an array to the right by k positions.
+
+#include <stdio.h>
+
+int main() {
+    int n, k;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter k: ");
+    scanf("%d", &k);
+
+    k = k % n; // handle cases where k > n
+
+    // Reverse entire array
+    int start = 0, end = n - 1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+
+    // Reverse first k elements
+    start = 0;
+    end = k - 1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+
+    // Reverse remaining elements
+    start = k;
+    end = n - 1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+
+    printf("Rotated array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+
+DAY-36
+
+//Read and print a matrix.
+
+#include <stdio.h>
+
+int main() {
+    int rows, cols;
+
+    scanf("%d %d", &rows, &cols);
+
+    int matrix[rows][cols];
+
+    // Read matrix
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    // Print matrix
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+//Find the sum of all elements in a matrix.
+
+#include <stdio.h>
+
+int main() {
+    int rows, cols, sum = 0;
+
+    scanf("%d %d", &rows, &cols);
+
+    int matrix[rows][cols];
+
+    // Read matrix elements
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+            sum += matrix[i][j];
+        }
+    }
+
+    // Print the sum
+    printf("%d", sum);
+
+    return 0;
+}
+DAY-37
+//#include <stdio.h>
+
+int main() {
+    int rows, cols;
+
+    scanf("%d %d", &rows, &cols);
+
+    int matrix[rows][cols];
+    int rowSum[rows];
+
+    // Read matrix
+    for (int i = 0; i < rows; i++) {
+        int sum = 0;
+
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+            sum += matrix[i][j];   // row sum
+        }
+
+        rowSum[i] = sum;  // store sum of this row
+    }
+
+    // Print row-wise sums
+    for (int i = 0; i < rows; i++) {
+        printf("%d ", rowSum[i]);
+    }
+
+    return 0;
+}
+//Find the transpose of a matrix.
+#include <stdio.h>
+
+int main() {
+    int rows, cols;
+
+    scanf("%d %d", &rows, &cols);
+
+    int matrix[rows][cols];
+    int transposed[cols][rows];
+
+    // Read the matrix
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    // Compute transpose
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            transposed[j][i] = matrix[i][j];
+        }
+    }
+
+    // Print transpose
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            printf("%d ", transposed[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
