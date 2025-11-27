@@ -1766,3 +1766,90 @@ int main() {
 
     return 0;
 }
+
+DAY-32
+//Merge two arrays.
+
+#include <stdio.h>
+
+int main() {
+    int n1, n2;
+
+    printf("Enter size of first array: ");
+    scanf("%d", &n1);
+
+    int arr1[n1];
+    printf("Enter %d elements of first array:\n", n1);
+    for (int i = 0; i < n1; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Enter size of second array: ");
+    scanf("%d", &n2);
+
+    int arr2[n2];
+    printf("Enter %d elements of second array:\n", n2);
+    for (int i = 0; i < n2; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    int merged[n1 + n2];
+
+    // Copy arr1 into merged
+    for (int i = 0; i < n1; i++) {
+        merged[i] = arr1[i];
+    }
+
+    // Copy arr2 into merged
+    for (int i = 0; i < n2; i++) {
+        merged[n1 + i] = arr2[i];
+    }
+
+    printf("Merged array:\n");
+    for (int i = 0; i < n1 + n2; i++) {
+        printf("%d ", merged[i]);
+    }
+
+    return 0;
+}
+//Find the digit that occurs the most times in an integer number.
+
+#include <stdio.h>
+
+int main() {
+    long long n;
+    int freq[10] = {0};  // frequency of digits 0–9
+    int digit;
+
+    printf("Enter an integer number: ");
+    scanf("%lld", &n);
+
+    // If number is negative, make it positive
+    if (n < 0)
+        n = -n;
+
+    // Count digit frequencies
+    while (n > 0) {
+        digit = n % 10;
+        freq[digit]++;
+        n /= 10;
+    }
+
+    // Find digit with highest frequency
+    int maxDigit = 0;
+    int maxFreq = freq[0];
+
+    for (int i = 1; i < 10; i++) {
+        if (freq[i] > maxFreq) {
+            maxFreq = freq[i];
+            maxDigit = i;
+        }
+    }
+
+    printf("Digit occurring most times = %d\n", maxDigit);
+    printf("It occurs %d times.\n", maxFreq);
+
+    return 0;
+}
+//Find the digit that occurs the most times in an integer number.Search in a sorted array using binary search.
+
