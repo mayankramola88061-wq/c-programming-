@@ -278,16 +278,16 @@ DAY-6
     }
 
     return 0;
-}
+    }
 
 DAY-7 
 
   //Write a program to input a year and check whether it is a leap year or not using conditional statements.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int year;
+    int main() {
+        int year;
 
     printf("Enter a year: ");
     scanf("%d", &year);
@@ -306,14 +306,14 @@ int main() {
     }
 
     return 0;
-}
-
+    }
+ 
 //Write a program to input a character and check whether it is a vowel or consonant using if–else.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    char ch;
+    int main() {
+        char ch;
 
     printf("Enter a character: ");
     scanf("%c", &ch);
@@ -328,8 +328,8 @@ DAY-8
    //Write a program to input a character and check whether it is an uppercase alphabet, lowercase alphabet, digit, or special character.
   #include <stdio.h>
 
-int main() {
-    char ch;
+    int main() {
+        char ch;
 
     printf("Enter a character: ");
     scanf("%c", &ch);
@@ -348,14 +348,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to input three numbers and find the largest among them using if–else.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int a, b, c;
+    int main() {
+        int a, b, c;
 
     printf("Enter three numbers: ");
     scanf("%d %d %d", &a, &b, &c);
@@ -373,11 +373,11 @@ DAY -9
 
 //Write a program to find the roots of a quadratic equation and categorize them.
 
-#include <stdio.h>
-#include <math.h>
+    #include <stdio.h>
+    #include <math.h>
 
-int main() {
-    float a, b, c, D, root1, root2, realPart, imagPart;
+    int main() {
+        float a, b, c, D, root1, root2, realPart, imagPart;
 
     printf("Enter coefficients a, b and c: ");
     scanf("%f %f %f", &a, &b, &c);
@@ -408,7 +408,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program that accepts a percentage (0-100) and assigns a grade based on the following criteria: 
 90-100: Grade A 
@@ -417,10 +417,10 @@ int main() {
 60-69: Grade D 
 below 60: Grade F.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int percentage;
+    int main() {
+        int percentage;
 
     printf("Enter your percentage (0-100): ");
     scanf("%d", &percentage);
@@ -445,15 +445,15 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAy-10 
     //Write a program to classify a triangle as Equilateral, Isosceles, or Scalene based on its side lengths.
 
     #include <stdio.h>
 
-int main() {
-    int a, b, c;
+    int main() {
+        int a, b, c;
 
     printf("Enter the three sides of the triangle: ");
     scanf("%d %d %d", &a, &b, &c);
@@ -476,14 +476,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to display the day of the week based on a number (1–7) using switch-case.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int day;
+    int main() {
+        int day;
 
     printf("Enter a number (1-7): ");
     scanf("%d", &day);
@@ -515,14 +515,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-11 
  //Write a program to display the month name and number of days using switch-case for a given month number.
 #include <stdio.h>
 
-int main() {
-    int month;
+    int main() {
+        int month;
 
     printf("Enter month number (1-12): ");
     scanf("%d", &month);
@@ -535,8 +535,8 @@ int main() {
 
 #include <stdio.h>
 
-int main() {
-    float cp, sp, profit, loss, percent;
+    int main() {
+        float cp, sp, profit, loss, percent;
 
     printf("Enter Cost Price: ");
     scanf("%f", &cp);
@@ -561,7 +561,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-12
 
@@ -571,11 +571,11 @@ Next 5 days late: ₹4/day
 Next 20 days days late: ₹6/day 
 More than 30 days: Membership Cancelled
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int days;
-    int fine = 0;
+    int main() {
+        int days;
+        int fine = 0;
 
     printf("Enter number of days late: ");
     scanf("%d", &days);
@@ -600,7 +600,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to calculate electricity bill based on units consumed with these rates: 
 First 100 units at ₹5/unit 
@@ -608,11 +608,11 @@ Next 100 units at ₹7/unit
 Next 100 units at ₹10/unit 
 Above at ₹12/unit           
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int units;
-    float bill = 0;
+    int main() {
+        int units;
+        float bill = 0;
 
     printf("Enter electricity units consumed: ");
     scanf("%d", &units);
@@ -636,16 +636,16 @@ int main() {
     printf("Total Electricity Bill = ₹%.2f\n", bill);
 
     return 0;
-}
+    }
 DAY-13 
 //Write a program to implement a basic calculator using switch-case for +, -, *, /, %.
 
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int a, b;
-    char op;
+    int main() {
+        int a, b;
+        char op;
 
     printf("Enter first number: ");
     scanf("%d", &a);
@@ -688,14 +688,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to print numbers from 1 to n.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter value of n: ");
     scanf("%d", &n);
@@ -707,15 +707,15 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-14
 //Write a program to print the sum of the first n odd numbers.
 
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, sum = 0;
+    int main() {
+        int n, sum = 0;
 
     printf("Enter value of n: ");
     scanf("%d", &n);
@@ -727,16 +727,16 @@ int main() {
     printf("Sum of first %d odd numbers = %d\n", n, sum);
 
     return 0;
-}
+    }
 
 
 //Write a program to print the product of even numbers from 1 to n.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
-    long long product = 1;   // use long long to store large values
+    int main() {
+        int n;
+        long long product = 1;   // use long long to store large values
 
     printf("Enter value of n: ");
     scanf("%d", &n);
@@ -748,16 +748,16 @@ int main() {
     printf("Product of even numbers from 1 to %d = %lld\n", n, product);
 
     return 0;
-}
+    }
 
 DAY-15 
 //Write a program to calculate the factorial of a number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
-    long long fact = 1;
+    int main() {
+        int n;
+        long long fact = 1;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -774,14 +774,14 @@ int main() {
     printf("Factorial of %d = %lld\n", n, fact);
 
     return 0;
-}
+    }
 
 //Write a program to reverse a given number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, reversed = 0, digit;
+    int main() {
+        int n, reversed = 0, digit;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -795,15 +795,15 @@ int main() {
     printf("Reversed number = %d\n", reversed);
 
     return 0;
-}
+    }
 
 DAY-16
 //Write a program to take a number as input and print its equivalent binary representation.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, binary[32], i = 0;
+    int main() {
+        int n, binary[32], i = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -828,14 +828,14 @@ int main() {
 
     printf("\n");
     return 0;
-}
+    }
 
 //Write a program to check if a number is a palindrome.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, original, reversed = 0, digit;
+    int main() {
+        int n, original, reversed = 0, digit;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -854,17 +854,17 @@ int main() {
         printf("The number is NOT a Palindrome.\n");
 
     return 0;
-}
+    }
 
 DAY-17
 //Write a program to check if a number is an Armstrong number.
 
-#include <stdio.h>
-#include <math.h>
+    #include <stdio.h>
+    #include <math.h>
 
-int main() {
-    int n, original, digit, count = 0;
-    double sum = 0;
+    int main() {
+        int n, original, digit, count = 0;
+        double sum = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -893,14 +893,14 @@ int main() {
         printf("%d is NOT an Armstrong number.\n", original);
 
     return 0;
-}
+    }
 
 //Write a program to check if a number is prime.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, i, flag = 0;
+    int main() {
+        int n, i, flag = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -923,15 +923,15 @@ int main() {
         printf("%d is NOT a prime number.\n", n);
 
     return 0;
-}
+    }
 
 DAY-18
 //Write a program to print all factors of a given number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -946,14 +946,14 @@ int main() {
 
     printf("\n");
     return 0;
-}
+    }
 
 //Write a program to find the HCF (GCD) of two numbers.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int a, b, hcf;
+    int main() {
+        int a, b, hcf;
 
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
@@ -969,15 +969,15 @@ int main() {
     printf("HCF (GCD) of %d and %d = %d\n", a, b, hcf);
 
     return 0;
-}
+    }
 DAY-19
 
 //Write a program to find the LCM of two numbers.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int a, b, hcf = 1, lcm;
+    int main() {
+        int a, b, hcf = 1, lcm;
 
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
@@ -997,14 +997,14 @@ int main() {
     printf("LCM of %d and %d = %d\n", a, b, lcm);
 
     return 0;
-}
+    }
 
 //Write a program to find the sum of digits of a number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, sum = 0, digit;
+    int main() {
+        int n, sum = 0, digit;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -1018,17 +1018,17 @@ int main() {
     printf("Sum of digits = %d\n", sum);
 
     return 0;
-}
+    }
 
 DAY-20
 //Write a program to find the product of odd digits of a number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, digit;
-    int product = 1;
-    int foundOdd = 0;
+    int main() {
+        int n, digit;
+        int product = 1;
+        int foundOdd = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -1050,14 +1050,14 @@ int main() {
         printf("No odd digits present.\n");
 
     return 0;
-}
+    }
 
 //Write a program to find the 1’s complement of a binary number and print it.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    char binary[100];
+    int main() {
+        char binary[100];
 
     printf("Enter a binary number: ");
     scanf("%s", binary);
@@ -1077,16 +1077,16 @@ int main() {
     printf("1's Complement = %s\n", binary);
 
     return 0;
-}
+    }
 
 DAY-21
 //Write a program to swap the first and last digit of a number.
 
-#include <stdio.h>
-#include <math.h>
+    #include <stdio.h>
+    #include <math.h>
 
-int main() {
-    int n, first, last, digits, power, middle;
+    int main() {
+        int n, first, last, digits, power, middle;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -1106,14 +1106,14 @@ int main() {
     printf("Number after swapping first and last digit = %d\n", swapped);
 
     return 0;
-}
+    }
 
 //Write a program to check if a number is a perfect number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, sum = 0;
+    int main() {
+        int n, sum = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -1132,15 +1132,16 @@ int main() {
         printf("%d is NOT a Perfect Number.\n", n);
 
     return 0;
-}
+    }
 
 DAY-22
 //Write a program to check if a number is a strong number
-#include <stdio.h>
 
-int main() {
-    int n, original, digit;
-    int sum = 0;
+    #include <stdio.h>
+
+    int main() {
+       int n, original, digit;
+       int sum = 0;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -1166,15 +1167,15 @@ int main() {
         printf("%d is NOT a Strong Number.\n", original);
 
     return 0;
-}
+    }
 
 //Write a program to find the sum of the series: 1 + 3/4 + 5/6 + 7/8 + … up to n terms.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
-    float sum = 0.0;
+    int main() {
+         int n;
+         float sum = 0.0;
 
     printf("Enter number of terms (n): ");
     scanf("%d", &n);
@@ -1188,16 +1189,16 @@ int main() {
     printf("Sum of the series = %.4f\n", sum);
 
     return 0;
-}
+    }
 
 DAY-23
 //Write a program to find the sum of the series: 2/3 + 4/7 + 6/11 + 8/15 + ... up to n terms.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
-    float sum = 0.0;
+    int main() {
+        int n;
+        float sum = 0.0;
 
     printf("Enter number of terms (n): ");
     scanf("%d", &n);
@@ -1211,7 +1212,7 @@ int main() {
     printf("Sum of the series = %.4f\n", sum);
 
     return 0;
-}
+    }
 
 //Write a program to print the following pattern:
 *****
@@ -1220,10 +1221,10 @@ int main() {
 *****
 *****
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    for (int i = 1; i <= 5; i++) {        // 5 rows
+    int main() {
+        for (int i = 1; i <= 5; i++) {        // 5 rows
         for (int j = 1; j <= 5; j++) {    // 5 columns
             printf("*");
         }
@@ -1231,7 +1232,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-24
 //Write a program to print the following pattern:
@@ -1241,9 +1242,9 @@ DAY-24
 ****
 *****
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+    int main() {
     for (int i = 1; i <= 5; i++) {        // number of rows
         for (int j = 1; j <= i; j++) {    // print i stars in each row
             printf("*");
@@ -1252,7 +1253,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to print the following pattern:
 1
@@ -1261,9 +1262,9 @@ int main() {
 1234
 12345
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+    int main() {
     for (int i = 1; i <= 5; i++) {          // rows
         for (int j = 1; j <= i; j++) {      // print numbers from 1 to i
             printf("%d", j);
@@ -1272,7 +1273,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 
 DAY-25
@@ -1283,10 +1284,10 @@ DAY-25
 2345
 12345
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    for (int i = 5; i >= 1; i--) {       // starting number decreases each row
+    int main() {
+        for (int i = 5; i >= 1; i--) {       // starting number decreases each row
         for (int j = i; j <= 5; j++) {   // print from i up to 5
             printf("%d", j);
         }
@@ -1294,7 +1295,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to print the following pattern:
 *****
@@ -1305,8 +1306,8 @@ int main() {
 
     #include <stdio.h>
 
-int main() {
-    for (int i = 5; i >= 1; i--) {        // number of stars in each row
+    int main() {
+        for (int i = 5; i >= 1; i--) {        // number of stars in each row
         for (int s = 0; s < 5 - i; s++) { // print spaces
             printf(" ");
         }
@@ -1317,7 +1318,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-26
 //Write a program to print the following pattern:
@@ -1327,10 +1328,10 @@ DAY-26
  2345
 12345
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    for (int i = 5; i >= 1; i--) {
+    int main() {
+        for (int i = 5; i >= 1; i--) {
 
         // print spaces
         for (int s = 1; s < i; s++) {
@@ -1346,7 +1347,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to print the following pattern:
 
@@ -1368,12 +1369,12 @@ int main() {
 
 *
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int pattern[] = {1, 3, 5, 3, 1};
+     int main() {
+          int pattern[] = {1, 3, 5, 3, 1};
 
-    for (int i = 0; i < 5; i++) {
+          for (int i = 0; i < 5; i++) {
 
         // print stars for this block
         for (int j = 0; j < pattern[i]; j++) {
@@ -1383,10 +1384,10 @@ int main() {
         // print a blank line between blocks (except last)
         if (i != 4)
             printf("\n");
-    }
+       }
 
-    return 0;
-}
+     return 0;
+  }
 
 DAY-27
 //Write a program to print the following pattern:
@@ -1403,8 +1404,8 @@ DAY-27
 #include <stdio.h>
 
 int main() {
-    int i, j;
-    int n = 5;  // middle row has 9 stars → 2*n - 1
+     int i, j;
+     int n = 5;  // middle row has 9 stars → 2*n - 1
 
     // Upper half
     for (i = 1; i <= n; i++) {
@@ -1423,7 +1424,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Write a program to print the following pattern:
 
@@ -1435,30 +1436,14 @@ int main() {
   ***
    *
 
-   #include <stdio.h>
+        #include <stdio.h>
 
-int main() {
-    int i, j;
-    int n = 4; // middle row has 7 stars → 2*n - 1 = 7
+        int main() {
+        int i, j;
+        int n = 4; // middle row has 7 stars → 2*n - 1 = 7
 
-    // Upper half
-    for (i = 1; i <= n; i++) {
-
-        // print spaces
-        for (j = 1; j <= n - i; j++) {
-            printf(" ");
-        }
-
-        // print stars
-        for (j = 1; j <= 2*i - 1; j++) {
-            printf("*");
-        }
-
-        printf("\n");
-    }
-
-    // Lower half
-    for (i = n - 1; i >= 1; i--) {
+        // Upper half
+        for (i = 1; i <= n; i++) {
 
         // print spaces
         for (j = 1; j <= n - i; j++) {
@@ -1471,17 +1456,33 @@ int main() {
         }
 
         printf("\n");
-    }
+        }
 
-    return 0;
-}
+        // Lower half
+        for (i = n - 1; i >= 1; i--) {
+
+        // print spaces
+        for (j = 1; j <= n - i; j++) {
+            printf(" ");
+        }
+
+        // print stars
+        for (j = 1; j <= 2*i - 1; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+        }
+
+        return 0;
+        }
 
 DAY-28
 //Write a program to print all the prime numbers from 1 to n.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+    int main() {
     int n, i, j, isPrime;
 
     printf("Enter value of n: ");
@@ -1505,12 +1506,12 @@ int main() {
     }
 
     return 0;
-}
-//Read and print elements of a one-dimensional array.
+    }
+    //Read and print elements of a one-dimensional array.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+    int main() {
     int n;
 
     printf("Enter number of elements: ");
@@ -1531,13 +1532,13 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-29 
 //Find the sum of array elements.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
+    int main() {
     int n, sum = 0;
 
     printf("Enter number of elements: ");
@@ -1554,14 +1555,14 @@ int main() {
     printf("Sum of array elements = %d\n", sum);
 
     return 0;
-}
+    }
 
 //Find the maximum and minimum element in an array.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1588,15 +1589,15 @@ int main() {
     printf("Minimum element = %d\n", min);
 
     return 0;
-}
+    }
 DAY-30
 
 //Count even and odd numbers in an array.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, even = 0, odd = 0;
+    int main() {
+        int n, even = 0, odd = 0;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1617,15 +1618,15 @@ int main() {
     printf("Total odd numbers = %d\n", odd);
 
     return 0;
-}
+    }
 
-//Count positive, negative, and zero elements in an array.
+    //Count positive, negative, and zero elements in an array.
 
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, pos = 0, neg = 0, zero = 0;
+    int main() {
+        int n, pos = 0, neg = 0, zero = 0;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1649,15 +1650,15 @@ int main() {
     printf("Zero elements = %d\n", zero);
 
     return 0;
-}
+    }
 
 DAY-31
 //Search for an element in an array using linear search.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, key, found = 0;
+    int main() {
+        int n, key, found = 0;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1685,13 +1686,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Reverse an array without taking extra space.
-#include <stdio.h>
 
-int main() {
-    int n;
+    #include <stdio.h>
+
+    int main() {
+        int n;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1720,7 +1722,7 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-31
 //Merge two arrays.
 
@@ -1747,10 +1749,10 @@ int main() {
         if (arr[i] == key) {
 //Reverse an array without taking extra space.#include <stdio.h>
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1780,11 +1782,12 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-32
-//Merge two arrays.
-int main() {
-    int n1, n2;
+  //Merge two arrays.
+  
+    int main() {
+        int n1, n2;
 
     printf("Enter size of first array: ");
     scanf("%d", &n1);
@@ -1822,15 +1825,15 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-32
 //Merge two arrays.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n1, n2;
+     int main() {
+         int n1, n2;
 
     printf("Enter size of first array: ");
     scanf("%d", &n1);
@@ -1868,15 +1871,15 @@ int main() {
     }
 
     return 0;
-}
+    }
 //Find the digit that occurs the most times in an integer number.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    long long n;
-    int freq[10] = {0};  // frequency of digits 0–9
-    int digit;
+    int main() {
+        long long n;
+        int freq[10] = {0};  // frequency of digits 0–9
+        int digit;
 
     printf("Enter an integer number: ");
     scanf("%lld", &n);
@@ -1907,13 +1910,13 @@ int main() {
     printf("It occurs %d times.\n", maxFreq);
 
     return 0;
-}
+    }
 //Find the digit that occurs the most times in an integer number.Search in a sorted array using binary search.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n1, n2;
+    int main() {
+        int n1, n2;
 
     printf("Enter size of first array: ");
     scanf("%d", &n1);
@@ -1951,13 +1954,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-33
 //Search in a sorted array using binary search.
-#include <stdio.h>
 
-int main() {
-    int n, key, low, high, mid, found = 0;
+    #include <stdio.h>
+
+    int main() {
+        int n, key, low, high, mid, found = 0;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -1996,11 +2000,13 @@ int main() {
     }
 
     return 0;
-}
-//#include <stdio.h>
+    }
+//
 
-int main() {
-    int n, key;
+    #include <stdio.h>
+
+    int main() {
+       int n, key;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -2036,10 +2042,10 @@ int main() {
 DAY-34
 //Insert an element in an array at a given position.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, pos, value;
+    int main() {
+        int n, pos, value;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -2068,13 +2074,13 @@ int main() {
     }
 
     return 0;
-}
+    }
 //Delete an element from an array.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, pos;
+     int main() {
+         int n, pos;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -2101,10 +2107,10 @@ int main() {
 DAY-35
 //Find the second largest element in an array.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -2136,13 +2142,13 @@ int main() {
     printf("%d\n", second);
 
     return 0;
-}
+    }
 //Rotate an array to the right by k positions.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, k;
+    int main() {
+        int n, k;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -2197,16 +2203,16 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-36
 
 //Read and print a matrix.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int rows, cols;
+    int main() {
+        int rows, cols;
 
     scanf("%d %d", &rows, &cols);
 
@@ -2228,14 +2234,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Find the sum of all elements in a matrix.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int rows, cols, sum = 0;
+    int main() {
+        int rows, cols, sum = 0;
 
     scanf("%d %d", &rows, &cols);
 
@@ -2253,12 +2259,13 @@ int main() {
     printf("%d", sum);
 
     return 0;
-}
+    }
 DAY-37
-//#include <stdio.h>
+//
+   #include <stdio.h>
 
-int main() {
-    int rows, cols;
+    int main() {
+        int rows, cols;
 
     scanf("%d %d", &rows, &cols);
 
@@ -2283,12 +2290,13 @@ int main() {
     }
 
     return 0;
-}
+    }
 //Find the transpose of a matrix.
-#include <stdio.h>
 
-int main() {
-    int rows, cols;
+    #include <stdio.h>
+
+    int main() {
+        int rows, cols;
 
     scanf("%d %d", &rows, &cols);
 
@@ -2318,14 +2326,15 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY- 38
 
 //Add two matrices.
-#include <stdio.h>
 
-int main() {
-    int r, c;
+    #include <stdio.h>
+
+    int main() {
+        int r, c;
 
     printf("Enter number of rows: ");
     scanf("%d", &r);
@@ -2365,14 +2374,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Check if a matrix is symmetric.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter the size of the square matrix (n x n): ");
     scanf("%d", &n);
@@ -2404,14 +2413,15 @@ int main() {
         printf("The matrix is not symmetric.\n");
 
     return 0;
-}
+    }
 
 DAY-39
 //Check if the elements on the diagonal of a matrix are distinct.
-#include <stdio.h>
 
-int main() {
-    int n;
+    include <stdio.h>
+
+    int main() {
+        int n;
 
     printf("Enter the size of the square matrix: ");
     scanf("%d", &n);
@@ -2445,13 +2455,13 @@ int main() {
         printf("Diagonal elements are NOT distinct.\n");
 
     return 0;
-}
+    }
 //Find the sum of main diagonal elements for a square matrix.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter the size of the square matrix: ");
     scanf("%d", &n);
@@ -2474,15 +2484,15 @@ int main() {
     printf("Sum of main diagonal elements = %d\n", sum);
 
     return 0;
-}
+    }
 
 DAY-40
 
 //Perform diagonal traversal of a matrix.
 #include <stdio.h>
 
-int main() {
-    int n;
+    int main() {
+        int n;
 
     printf("Enter the size of square matrix: ");
     scanf("%d", &n);
@@ -2521,14 +2531,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 //Multiply two matrices.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int r1, c1, r2, c2;
+    int main() {
+        int r1, c1, r2, c2;
 
     // Read dimensions of first matrix
     printf("Enter rows and columns of first matrix: ");
@@ -2584,11 +2594,12 @@ int main() {
     
 DAY-41
 //Count characters in a string without using built-in length functions.
-#include <stdio.h>
 
-int main() {
-    char str[100];
-    int count = 0;
+    #include <stdio.h>
+
+    int main() {
+        char str[100];
+        int count = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2606,13 +2617,13 @@ int main() {
     printf("Total characters = %d\n", count);
 
     return 0;
-}
+    }
 //Print each character of a string on a new line.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    char str[100];
+    int main() {
+        char str[100];
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2623,12 +2634,13 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-42 
 //Count vowels and consonants in a string.
-#include <stdio.h>
 
-int main() {
+    #include <stdio.h>
+
+    int main() {
     char str[100];
     int i, vowels = 0, consonants = 0;
 
@@ -2653,12 +2665,13 @@ int main() {
     printf("Consonants: %d\n", consonants);
 
     return 0;
-}
+    }
 //Convert a lowercase string to uppercase without using built-in functions.
-#include <stdio.h>
 
-int main() {
-    char str[100];
+    #include <stdio.h>
+
+    int main() {
+        char str[100];
 
     printf("Enter a lowercase string: ");
     fgets(str, sizeof(str), stdin);
@@ -2672,14 +2685,15 @@ int main() {
 
     printf("Uppercase string: %s", str);
     return 0;
-}
+    }
 DAY-43
 //Reverse a string.
-#include <stdio.h>
 
-int main() {
-    char str[100];
-    int i, len = 0;
+    #include <stdio.h>
+
+    int main() {
+        char str[100];
+        int i, len = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2696,13 +2710,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 //Check if a string is a palindrome.
-#include <stdio.h>
 
-int main() {
-    char str[100];
-    int i, j, flag = 1;
+    #include <stdio.h>
+
+    int main() {
+       char str[100];
+       int i, j, flag = 1;
 
     printf("Enter a string: ");
     scanf("%s", str);
@@ -2725,14 +2740,15 @@ int main() {
         printf("The string is not a palindrome.\n");
 
     return 0;
-}
+    }
 DAY-44
 //Count spaces, digits, and special characters in a string.
-#include <stdio.h>
 
-int main() {
-    char str[200];
-    int spaces = 0, digits = 0, special = 0;
+    #include <stdio.h>
+
+    int main() {
+        char str[200];
+        int spaces = 0, digits = 0, special = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2754,12 +2770,13 @@ int main() {
     printf("Special characters: %d\n", special);
 
     return 0;
-}
+    }
 //Replace spaces with hyphens in a string.
-#include <stdio.h>
 
-int main() {
-    char str[200];
+    #include <stdio.h>
+
+    int main() {
+        char str[200];
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2772,16 +2789,17 @@ int main() {
     printf("String after replacing spaces: %s", str);
 
     return 0;
-}
+    }
 
 DAY-45
 
 //Count frequency of a given character in a string.
-#include <stdio.h>
 
-int main() {
-    char str[100], ch;
-    int count = 0;
+    #include <stdio.h>
+
+    int main() {
+        char str[100], ch;
+        int count = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2799,14 +2817,14 @@ int main() {
     printf("Frequency of '%c' = %d\n", ch, count);
 
     return 0;
-}
+    }
 
 //Toggle case of each character in a string.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    char str[100];
+    int main() {
+        char str[100];
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2823,16 +2841,17 @@ int main() {
     printf("Toggled string: %s", str);
     
     return 0;
-}
+    }
 
 DAY-46
 
 //Remove all vowels from a string.
-#include <stdio.h>
 
-int main() {
-    char str[200], result[200];
-    int i = 0, j = 0;
+    #include <stdio.h>
+
+    int main() {
+        char str[200], result[200];
+        int i = 0, j = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -2853,13 +2872,15 @@ int main() {
     printf("String after removing vowels: %s", result);
 
     return 0;
-}
+    }
+    
 //Find the first repeating lowercase alphabet in a string.
-#include <stdio.h>
 
-int main() {
-    char str[100];
-    int freq[26] = {0};
+    #include <stdio.h>
+
+    int main() {
+        char str[100];
+        int freq[26] = {0};
 
     printf("Enter a lowercase string: ");
     scanf("%[^\n]", str);
@@ -2877,16 +2898,17 @@ int main() {
 
     printf("No repeating lowercase alphabet found.\n");
     return 0;
-}
+    }
 DAY-47
 
 //Check if two strings are anagrams of each other.
-#include <stdio.h>
-#include <string.h>
 
-int main() {
-    char str1[100], str2[100];
-    int freq1[26] = {0}, freq2[26] = {0};
+     #include <stdio.h>
+     #include <string.h>
+
+    int main() {
+         char str1[100], str2[100];
+         int freq1[26] = {0}, freq2[26] = {0};
 
     printf("Enter first string: ");
     scanf("%s", str1);
@@ -2919,16 +2941,17 @@ int main() {
 
     printf("Anagrams\n");
     return 0;
-}
+    }
 //Find the longest word in a sentence.
-#include <stdio.h>
-#include <string.h>
 
-int main() {
-    char str[200];
-    char longest[200];
-    int maxLen = 0, currLen = 0;
-    int i = 0, start = 0, longestStart = 0;
+    #include <stdio.h>
+    #include <string.h>
+
+    int main() {
+        char str[200];
+        char longest[200];
+        int maxLen = 0, currLen = 0;
+        int i = 0, start = 0, longestStart = 0;
 
     printf("Enter a sentence: ");
     fgets(str, sizeof(str), stdin);
@@ -2969,11 +2992,12 @@ int main() {
 DAY-48
 
 //Check if one string is a rotation of another.
-#include <stdio.h>
-#include <string.h>
 
-int main() {
-    char str1[100], str2[100], temp[200];
+    #include <stdio.h>
+    #include <string.h>
+
+    int main() {
+        char str1[100], str2[100], temp[200];
 
     printf("Enter first string: ");
     gets(str1);
@@ -3035,10 +3059,11 @@ int main() {
  DAY-49
 
  //Print the initials of a name.
-#include <stdio.h>
+ 
+    #include <stdio.h>
 
-int main() {
-    char str[100];
+     int main() {
+         char str[100];
 
     printf("Enter your full name: ");
     fgets(str, sizeof(str), stdin);
@@ -3056,13 +3081,14 @@ int main() {
     }
 
     return 0;
-}
+    }
 //Print initials of a name with the surname displayed in full.
-#include <stdio.h>
 
-int main() {
-    char name[100];
-    int i = 0;
+    #include <stdio.h>
+
+    int main() {
+        char name[100];
+        int i = 0;
 
     printf("Enter your full name: ");
     fgets(name, sizeof(name), stdin);
@@ -3089,11 +3115,12 @@ int main() {
 DAY-50
 
 //Change the date format from dd/04/yyyy to dd-Apr-yyyy.
-#include <stdio.h>
 
-int main() {
-    char date[20];
-    int day, year;
+    #include <stdio.h>
+
+    int main() {
+        char date[20];
+        int day, year;
 
     printf("Enter date in dd/04/yyyy format: ");
     scanf("%s", date);
@@ -3103,13 +3130,14 @@ int main() {
     printf("%02d-Apr-%d\n", day, year);
 
     return 0;
-}
+    }
 //Print all sub-strings of a string.
-#include <stdio.h>
 
-int main() {
-    char str[100];
-    int i, j, k;
+    #include <stdio.h>
+
+    int main() {
+        char str[100];
+        int i, j, k;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
@@ -3137,10 +3165,10 @@ int main() {
 
  //Write a Program to take a sorted array(say nums[]) and an integer (say target) as inputs. The elements in the sorted array might be repeated. You need to print the first and last occurrence of the target and print the index of first and last occurrence. Print -1, -1 if the target is not present.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, target;
+    int main() {
+        int n, target;
     
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3178,10 +3206,10 @@ DAY-52
 
 //Write a Program to take a sorted array arr[] and an integer x as input, find the index (0-based) of the smallest element in arr[] that is greater than or equal to x and print it. This element is called the ceil of x. If such an element does not exist, print -1. Note: In case of multiple occurrences of ceil of x, return the index of the first occurrence.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, x;
+    int main() {
+        int n, x;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3219,10 +3247,11 @@ int main() {
 DAY-53
 
 //Write a Program to take an array of integers as input, calculate the pivot index of this array. The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right. If the index is on the left edge of the array, then the left sum is 0 because there are no elements to the left. This also applies to the right edge of the array. Print the leftmost pivot index. If no such index exists, print -1.
-#include <stdio.h>
 
-int main() {
-    int n;
+    #include <stdio.h>
+
+    int main() {
+       int n;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3260,12 +3289,12 @@ DAY-54
 
 //Write a Program to take a positive integer n as input, and find the pivot integer x such that the sum of all elements between 1 and x inclusively equals the sum of all elements between x and n inclusively. Print the pivot integer x. If no such integer exists, print -1. Assume that it is guaranteed that there will be at most one pivot integer for the given input.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter n: ");
-    scanf("%d", &n);
+    int main() {
+        int n;
+        printf("Enter n: ");
+        scanf("%d", &n);
 
     // Total sum from 1 to n
     int total = n * (n + 1) / 2;
@@ -3288,12 +3317,13 @@ int main() {
 DAY-55
 
 //Write a program to take an integer array nums of size n, and print the majority element. The majority element is the element that appears strictly more than ⌊n / 2⌋ times. Print -1 if no such element exists. Note: Majority Element is not necessarily the element that is present most number of times.
-#include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+    #include <stdio.h>
+
+    int main() {
+        int n;
+        printf("Enter size of array: ");
+        scanf("%d", &n);
 
     int nums[n];
 
@@ -3340,23 +3370,23 @@ N.B:
 - Print the output for each element in a comma separated fashion.
 - Do not use Stack, use brute force approach (nested loop) to solve.
 
-#include <stdio.h>
+      #include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+      int main() {
+          int n;
+          printf("Enter size of array: ");
+          scanf("%d", &n);
 
-    int arr[n], nge[n], stack[n];
-    int top = -1;
+       int arr[n], nge[n], stack[n];
+       int top = -1;
 
-    printf("Enter %d elements:\n", n);
-    for (int i = 0; i < n; i++) {
+       printf("Enter %d elements:\n", n);
+      for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
-    }
+      }
 
-    // Process from right to left
-    for (int i = n - 1; i >= 0; i--) {
+      // Process from right to left
+      for (int i = n - 1; i >= 0; i--) {
 
         // Pop all elements smaller or equal to arr[i]
         while (top != -1 && stack[top] <= arr[i]) {
@@ -3368,17 +3398,17 @@ int main() {
 
         // Push current element
         stack[++top] = arr[i];
-    }
+       }
 
-    // Print result in comma-separated format
-    for (int i = 0; i < n; i++) {
+       // Print result in comma-separated format
+      for (int i = 0; i < n; i++) {
         printf("%d", nge[i]);
         if (i != n - 1)
             printf(", ");
-    }
+       }
 
-    return 0;
-    }
+         return 0;
+       }
     
 DAY-57
 
@@ -3387,23 +3417,24 @@ DAY-57
 N.B:
 - Print the output for each element in a comma separated fashion.
 - Do not use Stack, use brute force approach (nested loop) to solve.
-#include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+      #include <stdio.h>
 
-    int arr[n], pge[n], stack[n];
-    int top = -1;
+      int main() {
+          int n;
+          printf("Enter size of array: ");
+           scanf("%d", &n);
 
-    printf("Enter %d elements:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+          int arr[n], pge[n], stack[n];
+          int top = -1;
 
-    // Process from left to right
-    for (int i = 0; i < n; i++) {
+           printf("Enter %d elements:\n", n);
+           for (int i = 0; i < n; i++) {
+              scanf("%d", &arr[i]);
+          }
+
+         // Process from left to right
+         for (int i = 0; i < n; i++) {
 
         // Pop all elements <= current element
         while (top != -1 && stack[top] <= arr[i]) {
@@ -3418,24 +3449,25 @@ int main() {
 
         // Push current element
         stack[++top] = arr[i];
-    }
+        }
 
-    // Print comma-separated output
-    for (int i = 0; i < n; i++) {
+        // Print comma-separated output
+       for (int i = 0; i < n; i++) {
         printf("%d", pge[i]);
         if (i != n - 1)
             printf(", ");
-    }
+      }
 
-    return 0;
-    }
+      return 0;
+      }
     
 DAY-58
 
 //Write a Program to take an integer array nums. Print an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
-#include <stdio.h>
 
-int main() {
+    #include <stdio.h>
+
+    int main() {
     int n;
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3476,10 +3508,11 @@ int main() {
 DAY-59
 
 //Write a program to take an integer array arr and an integer k as inputs. Print the maximum sum of all the subarrays of size k.
-#include <stdio.h>
 
-int main() {
-    int n, k;
+    #include <stdio.h>
+
+    int main() {
+        int n, k;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3525,12 +3558,12 @@ DAY-60
 
 //Write a program to take an integer array arr and an integer k as inputs. The task is to find the maximum element in each subarray of size k moving from left to right. Print the maximum elements for each window separated by spaces as output.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    int n, k;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+    int main() {
+        int n, k;
+         printf("Enter size of array: ");
+         scanf("%d", &n);
 
     int arr[n];
     printf("Enter %d elements:\n", n);
@@ -3582,12 +3615,13 @@ int main() {
 DAY-61
 
 //Write a program to take an integer array arr and an integer k as inputs. The task is to find the first negative integer in each subarray of size k moving from left to right. If no negative exists in a window, print "0" for that window. Print the results separated by spaces as output.
-#include <stdio.h>
 
-int main() {
-    int n, k;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+    #include <stdio.h>
+
+    int main() {
+        int n, k;
+        printf("Enter size of array: ");
+         scanf("%d", &n);
 
     int arr[n];
     printf("Enter %d elements:\n", n);
@@ -3642,10 +3676,11 @@ int main() {
 DAY-62
 
 //Write a program to take an integer array arr as input. The task is to find the maximum sum of any contiguous subarray using Kadane's algorithm. Print the maximum sum as output. If all elements are negative, print the largest (least negative) element.
-#include <stdio.h>
 
-int main() {
-    int n;
+    #include <stdio.h>
+
+    int main() {
+        int n;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3679,17 +3714,18 @@ int main() {
 DAY-63
 
 //Write a program to take an integer array arr and an integer k as inputs. The task is to find the kth smallest element in the array. Print the kth smallest element as output.
-#include <stdio.h>
 
-// Simple swap function
-void swap(int *a, int *b) {
+    #include <stdio.h>
+
+    // Simple swap function
+    void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
-}
+    }
 
-// Bubble sort (simple for beginners)
-void sortArray(int arr[], int n) {
+    // Bubble sort (simple for beginners)
+    void sortArray(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
@@ -3697,10 +3733,10 @@ void sortArray(int arr[], int n) {
             }
         }
     }
-}
+    }
 
-int main() {
-    int n, k;
+    int main() {
+        int n, k;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3731,11 +3767,11 @@ DAY-64
 
 //Write a program to take a string s as input. The task is to find the length of the longest substring without repeating characters. Print the length as output.
 
-#include <stdio.h>
-#include <string.h>
+    #include <stdio.h>
+    #include <string.h>
 
-int main() {
-    char s[1000];
+    int main() {
+        char s[1000];
     
     printf("Enter the string: ");
     scanf("%[^\n]%*c", s);  // read full line including spaces
@@ -3767,11 +3803,12 @@ int main() {
 DAY-65
 
 //Write a program to take two strings s and t as inputs (assume all characters are lowercase). The task is to determine if s and t are valid anagrams, meaning they contain the same characters with the same frequencies. Print "Anagram" if they are, otherwise "Not Anagram".
-#include <stdio.h>
-#include <string.h>
 
-int main() {
-    char s[1000], t[1000];
+    #include <stdio.h>
+    #include <string.h>
+
+    int main() {
+         char s[1000], t[1000];
 
     printf("Enter string s: ");
     scanf("%s", s);
@@ -3808,10 +3845,11 @@ int main() {
 DAY-66
 
 //Write a program to take an integer array nums which contains only positive integers, and an integer target as inputs. The goal is to find two distinct indices i and j in the array such that nums[i] + nums[j] equals the target. Assume exactly one solution exists and return the indices in any order. Print the two indices separated by a space as output. If no solution exists, print "-1 -1".
-#include <stdio.h>
 
-int main() {
-    int n, target;
+    #include <stdio.h>
+
+    int main() {
+        int n, target;
 
     printf("Enter size of array: ");
     scanf("%d", &n);
@@ -3844,10 +3882,11 @@ int main() {
 DAY-67
 
 //Write a program to take two sorted arrays of size m and n as input. Merge both the arrays such that the merged array is also sorted. Print the merged array.
-#include <stdio.h>
 
-int main() {
-    int m, n;
+    #include <stdio.h>
+
+    int main() {
+        int m, n;
 
     printf("Enter size of first array: ");
     scanf("%d", &m);
@@ -3899,12 +3938,13 @@ int main() {
 DAY-68
 
 //Write a program to take an input array of size n. The array should contain all the integers between 0 to n except for one. Print that missing number
-#include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter n: ");
-    scanf("%d", &n);
+    #include <stdio.h>
+
+    int main() {
+        int n;
+        printf("Enter n: ");
+        scanf("%d", &n);
 
     int arr[n];
     int sum = 0;
@@ -3928,12 +3968,13 @@ int main() {
 DAY-69
 
 //Write a program to take an integer array as input. Only one element will be repeated. Print the repeated element. Try to find the result in one single iteration.
-#include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+    #include <stdio.h>
+
+    int main() {
+         int n;
+         printf("Enter size of array: ");
+        scanf("%d", &n);
 
     int arr[n];
     printf("Enter %d integers (one will be repeated):\n", n);
@@ -3954,17 +3995,17 @@ int main() {
     printf("%d\n", xorAll);
 
     return 0;
-}
+    }
 
 DAY-70
 
 //Write a program to take a string input. Change it to sentence case.
 
-#include <stdio.h>
-#include <ctype.h>
+     #include <stdio.h>
+    #include <ctype.h>
 
-int main() {
-    char s[1000];
+    int main() {
+       char s[1000];
 
     printf("Enter a string: ");
     scanf("%[^\n]%*c", s);   // read full line including spaces
@@ -3982,17 +4023,18 @@ int main() {
     printf("%s\n", s);
 
     return 0;
-}
+    }
 
 DAY-71
 
 //Write a C program that creates a text file named info.txt in write mode. The program should take the user’s name and age as input, and write them to the file using fprintf(). After writing, display a message confirming that the data was successfully saved.
-#include <stdio.h>
 
-int main() {
-    FILE *fp;
-    char name[100];
-    int age;
+    #include <stdio.h>
+
+    int main() {
+        FILE *fp;
+        char name[100];
+        int age;
 
     // Open file in write mode
     fp = fopen("info.txt", "w");
@@ -4018,16 +4060,17 @@ int main() {
     printf("Data successfully saved to info.txt\n");
 
     return 0;
-}
+    }
 
 DAY-72
 
 //Write a C program that opens an existing file (e.g., info.txt) and reads its contents using fgets(). The program should print all the lines to the console until EOF (end of file) is reached.
-#include <stdio.h>
 
-int main() {
-    FILE *fp;
-    char line[200];
+    #include <stdio.h>
+
+    int main() {
+         FILE *fp;
+         char line[200];
 
     // Open file in read mode
     fp = fopen("info.txt", "r");
@@ -4048,18 +4091,19 @@ int main() {
     fclose(fp);
 
     return 0;
-}
+     }
 
 DAY-73
 
 //Read a text file and count the total number of characters, words, and lines. A word is defined as a sequence of non-space characters separated by spaces or newlines.
-#include <stdio.h>
-#include <ctype.h>
 
-int main() {
-    FILE *fp;
-    char filename[100];
-    char c;
+    #include <stdio.h>
+    #include <ctype.h>
+
+     int main() {
+         FILE *fp;
+         char filename[100];
+         char c;
 
     int characters = 0, words = 0, lines = 0;
     int inWord = 0; // flag to track word boundaries
@@ -4102,18 +4146,18 @@ int main() {
     printf("Lines: %d\n", lines);
 
     return 0;
-}
+    }
 
 DAY-74
 
 //Take two filenames from the user – a source file and a destination file. Copy all the content from the source file to the destination file using fgetc() and fputc().
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    char src[100], dest[100];
-    FILE *fpSrc, *fpDest;
-    int ch;
+    int main() {
+        char src[100], dest[100];
+        FILE *fpSrc, *fpDest;
+        int ch;
 
     // Take filenames from user
     printf("Enter source file name: ");
@@ -4149,17 +4193,18 @@ int main() {
     printf("File copied successfully from %s to %s\n", src, dest);
 
     return 0;
-}
+    }
 
 DAY-75
 
 //Open an existing file in append mode and allow the user to enter a new line of text. Append the text at the end without overwriting existing content.
-#include <stdio.h>
 
-int main() {
-    char filename[100];
-    char line[500];
-    FILE *fp;
+    #include <stdio.h>
+
+    int main() {
+        char filename[100];
+         char line[500];
+        FILE *fp;
 
     // Take file name
     printf("Enter file name: ");
@@ -4190,10 +4235,11 @@ int main() {
 DAY-76
 
 //Ask the user for a filename. Check if it exists by trying to open it in read mode. If the file pointer is NULL, print an error message; otherwise, read and display its content.
-#include <stdio.h>
 
-int main() {
-    char filename[100];
+    #include <stdio.h>
+
+    int main() {
+        char filename[100];
     FILE *fp;
     char ch;
 
@@ -4218,17 +4264,18 @@ int main() {
     fclose(fp);
 
     return 0;
-}
+    }
 
 DAY-77
 
 //Write a program that reads text from input.txt, converts all lowercase letters to uppercase, and writes the result to output.txt.
-#include <stdio.h>
-#include <ctype.h>
 
-int main() {
-    FILE *inFile, *outFile;
-    int ch;
+    #include <stdio.h>
+    #include <ctype.h>
+
+    int main() {
+        FILE *inFile, *outFile;
+        int ch;
 
     // Open input file in read mode
     inFile = fopen("input.txt", "r");
@@ -4257,20 +4304,20 @@ int main() {
     printf("Conversion complete! Check output.txt\n");
 
     return 0;
-}
+    }
 
 DAY-78
 
 //Read a text file and count how many vowels and consonants are in the file. Ignore digits and special characters.
 
-#include <stdio.h>
-#include <ctype.h>
+    #include <stdio.h>
+    #include <ctype.h>
 
-int main() {
-    FILE *fp;
-    char filename[100];
-    int ch;
-    int vowels = 0, consonants = 0;
+     int main() {
+         FILE *fp;
+         char filename[100];
+         int ch;
+         int vowels = 0, consonants = 0;
 
     printf("Enter filename: ");
     scanf("%s", filename);
@@ -4301,17 +4348,18 @@ int main() {
     printf("Consonants: %d\n", consonants);
 
     return 0;
-}
+    }
 
 DAY-79
 
 //A file numbers.txt contains a list of integers separated by spaces. Read all integers, compute their sum and average, and print both.
-#include <stdio.h>
 
-int main() {
-    FILE *fp;
-    int num;
-    int sum = 0, count = 0;
+    #include <stdio.h>
+
+    int main() {
+        FILE *fp;
+        int num;
+        int sum = 0, count = 0;
 
     fp = fopen("numbers.txt", "r");
 
@@ -4339,20 +4387,21 @@ int main() {
     printf("Average = %.2f\n", average);
 
     return 0;
-}
+    }
 
 DAY-80
 
 //Store multiple student records (name, roll number, marks) into a file using fprintf(). Then read them using fscanf() and display each record.
-#include <stdio.h>
 
-struct Student {
-    char name[50];
-    int roll;
-    float marks;
-};
+    #include <stdio.h>
 
-int main() {
+    struct Student {
+        char name[50];
+        int roll;
+        float marks;
+    };
+
+    int main() {
     FILE *fp;
     int n;
 
@@ -4409,16 +4458,17 @@ int main() {
     fclose(fp);
 
     return 0;
-}
+    }
 
 DAY-81
 
 //Create an enumeration for days (SUNDAY to SATURDAY) and print each day with its integer value.
-#include <stdio.h>
 
-int main(void) {
-    // Enumeration: by default SUNDAY = 0, MONDAY = 1, ..., SATURDAY = 6
-    enum Day { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
+    #include <stdio.h>
+
+    int main(void) {
+        // Enumeration: by default SUNDAY = 0, MONDAY = 1, ..., SATURDAY = 6
+        enum Day { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
 
     const char *dayNames[] = {
         "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"
@@ -4432,16 +4482,17 @@ int main(void) {
     }
 
     return 0;
-}
+     }
 
 DAY-82
 
 //Define an enum for traffic lights (RED, YELLOW, GREEN) and print 'Stop', 'Wait', or 'Go' based on its value.
-#include <stdio.h>
 
-int main() {
-    // Define enum
-    enum TrafficLight { RED, YELLOW, GREEN };
+    #include <stdio.h>
+
+    int main() {
+       // Define enum
+       enum TrafficLight { RED, YELLOW, GREEN };
 
     // Example: set current light here
     enum TrafficLight light;
@@ -4465,16 +4516,17 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-83
 
 //Create an enum for months and print how many days each month has.
-#include <stdio.h>
 
-int main() {
-    // Enum for months
-    enum Month {
+    #include <stdio.h>
+
+    int main() {
+        // Enum for months
+        enum Month {
         JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE,
         JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
     };
@@ -4495,16 +4547,17 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-84
 
 //Define an enum with SUCCESS, FAILURE, and TIMEOUT, and print messages accordingly.
-#include <stdio.h>
 
-int main() {
-    // Define enum
-    enum Status { SUCCESS, FAILURE, TIMEOUT };
+    #include <stdio.h>
+
+    int main() {
+       // Define enum
+       enum Status { SUCCESS, FAILURE, TIMEOUT };
 
     enum Status status;
 
@@ -4529,16 +4582,17 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-85
 
 //Assign explicit values starting from 10 and print them.
-#include <stdio.h>
 
-int main() {
-    // Enum with explicit values
-    enum Status {
+    #include <stdio.h>
+
+    int main() {
+        // Enum with explicit values
+        enum Status {
         SUCCESS = 10,
         FAILURE = 11,
         TIMEOUT = 12
@@ -4549,16 +4603,17 @@ int main() {
     printf("TIMEOUT = %d\n", TIMEOUT);
 
     return 0;
-}
+    }
 
 DAY-86
 
 //Use enum to represent menu choices (ADD, SUBTRACT, MULTIPLY) and perform operations using switch.
-#include <stdio.h>
 
-int main() {
-    // Define enum for menu choices
-    enum Menu { ADD = 1, SUBTRACT, MULTIPLY };
+    #include <stdio.h>
+
+    int main() {
+        // Define enum for menu choices
+        enum Menu { ADD = 1, SUBTRACT, MULTIPLY };
 
     int choice;
     float a, b;
@@ -4593,16 +4648,17 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-87
 
 //Create an enum for user roles (ADMIN, USER, GUEST) and display messages based on role.
-#include <stdio.h>
 
-int main() {
-    // Define enum for roles
-    enum Role { ADMIN = 1, USER, GUEST };
+    #include <stdio.h>
+
+    int main() {
+       // Define enum for roles
+        enum Role { ADMIN = 1, USER, GUEST };
 
     int role;
 
@@ -4633,16 +4689,17 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-88
 
 //Print all enum names and integer values using a loop.
-#include <stdio.h>
 
-int main() {
-    // Define enum
-    enum Role { ADMIN, USER, GUEST, SUPERADMIN };
+    #include <stdio.h>
+
+    int main() {
+        // Define enum
+        enum Role { ADMIN, USER, GUEST, SUPERADMIN };
 
     // Matching names for printing
     const char *roleNames[] = {
@@ -4658,14 +4715,15 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-89
 
 //Show that enums store integers by printing assigned values.
-#include <stdio.h>
 
-int main() {
+    #include <stdio.h>
+
+    int main() {
     // Enum with explicit and implicit integer values
     enum Example {
         A = 5,   // assigned 5
@@ -4680,17 +4738,17 @@ int main() {
     printf("D = %d\n", D);
 
     return 0;
-}
+    }
 
 DAY-90
 
 //Define a struct with enum Gender and print person's gender.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-int main() {
-    // Define enum for gender
-    enum Gender { MALE = 1, FEMALE, OTHER };
+    int main() {
+       // Define enum for gender
+       enum Gender { MALE = 1, FEMALE, OTHER };
 
     // Define struct containing the enum
     struct Person {
@@ -4725,20 +4783,21 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-91
 
 //Define a structure Student with name, roll_no, and marks, then read and print one student's data.
-#include <stdio.h>
 
-struct Student {
+    #include <stdio.h>
+
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-int main() {
+    int main() {
     struct Student s;
 
     // Read student data
@@ -4758,21 +4817,21 @@ int main() {
     printf("Marks: %.2f\n", s.marks);
 
     return 0;
-}
+    }
 
 DAY-92
 
 //Store details of 5 students in an array of structures and print all.
 
-#include <stdio.h>
+     #include <stdio.h>
 
-struct Student {
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-int main() {
+    int main() {
     struct Student s[5];
 
     // Input details of 5 students
@@ -4802,20 +4861,21 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-93
 
 //Find and print the student with the highest marks.
-#include <stdio.h>
 
-struct Student {
+    #include <stdio.h>
+
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-int main() {
+    int main() {
     struct Student s[5];
     int i, topIndex = 0;
 
@@ -4849,30 +4909,30 @@ int main() {
     printf("Marks: %.2f\n", s[topIndex].marks);
 
     return 0;
-}
+    }
 
 DAY-94
 
 //Write a function that accepts a structure as parameter and prints its members.
-#include <stdio.h>
 
-// Define structure
-struct Student {
+    #include <stdio.h>
+
+    // Define structure
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-// Function that accepts a structure and prints it
-void printStudent(struct Student s) {
+    // Function that accepts a structure and prints it
+    void printStudent(struct Student s) {
     printf("\n--- Student Details ---\n");
     printf("Name: %s\n", s.name);
     printf("Roll No: %d\n", s.roll_no);
     printf("Marks: %.2f\n", s.marks);
-}
+    }
 
-int main() {
-    struct Student st;
+       struct Student st;
 
     // Read student details
     printf("Enter name: ");
@@ -4888,21 +4948,22 @@ int main() {
     printStudent(st);
 
     return 0;
-}
+    }
 
 DAY-95
 
 //Return a structure containing top student's details from a function.
-#include <stdio.h>
 
-struct Student {
+    #include <stdio.h>
+
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-// Function that returns the student with highest marks
-struct Student getTopStudent(struct Student s[], int n) {
+    // Function that returns the student with highest marks
+    struct Student getTopStudent(struct Student s[], int n) {
     int topIndex = 0;
 
     for (int i = 1; i < n; i++) {
@@ -4912,9 +4973,9 @@ struct Student getTopStudent(struct Student s[], int n) {
     }
 
     return s[topIndex];  // return structure
-}
+    }
 
-int main() {
+    int main() {
     int n;
 
     printf("Enter number of students: ");
@@ -4946,30 +5007,30 @@ int main() {
     printf("Marks : %.2f\n", top.marks);
 
     return 0;
-}
+    }
 
 DAY-96
 
 //Create Employee structure with nested Date structure for joining date and print details.
 
-#include <stdio.h>
+    #include <stdio.h>
 
-// Nested structure for Date
-struct Date {
+    // Nested structure for Date
+    struct Date {
     int day;
     int month;
     int year;
-};
+    };
 
-// Employee structure containing Date
-struct Employee {
+    // Employee structure containing Date
+    struct Employee {
     char name[50];
     int id;
     float salary;
     struct Date joiningDate;
-};
+    };
 
-int main() {
+    int main() {
     struct Employee emp;
 
     // Input employee details
@@ -4998,20 +5059,21 @@ int main() {
             emp.joiningDate.year);
 
     return 0;
-}
+    }
 
 DAY-97
 
 //Store employee data in a binary file using fwrite() and read using fread().
-#include <stdio.h>
 
-struct Employee {
+     #include <stdio.h>
+
+    struct Employee {
     char name[50];
     int id;
     float salary;
-};
+     };
 
-int main() {
+    int main() {
     FILE *fp;
     int n;
 
@@ -5071,10 +5133,11 @@ int main() {
 DAY-98
     
 //Take two structs as input and check if they are identical
-#include <stdio.h>
 
-// Manual string compare function
-int myStrCmp(char a[], char b[]) {
+    #include <stdio.h>
+
+    // Manual string compare function
+    int myStrCmp(char a[], char b[]) {
     int i = 0;
     while (a[i] != '\0' && b[i] != '\0') {
         if (a[i] != b[i])
@@ -5083,15 +5146,15 @@ int myStrCmp(char a[], char b[]) {
     }
     // If both ended at same time → identical
     return (a[i] == '\0' && b[i] == '\0');
-}
+    }
 
-struct Student {
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-int main() {
+    int main() {
     struct Student s1, s2;
 
     // Input for first student
@@ -5124,21 +5187,22 @@ int main() {
     }
 
     return 0;
-}
+    }
 
 DAY-99
 
 //Use malloc() to allocate structure memory dynamically and print details.
-#include <stdio.h>
-#include <stdlib.h>
 
-struct Student {
+    #include <stdio.h>
+    #include <stdlib.h>
+
+    struct Student {
     char name[50];
     int roll_no;
     float marks;
-};
+    };
 
-int main() {
+    int main() {
     // Allocate structure dynamically
     struct Student *s = (struct Student *)malloc(sizeof(struct Student));
 
