@@ -2964,7 +2964,8 @@ int main() {
     printf("Length: %d\n", maxLen);
 
     return 0;
-}
+    }
+    
 DAY-48
 
 //Check if one string is a rotation of another.
@@ -3083,8 +3084,10 @@ int main() {
     }
 
     return 0;
-}
+    }
+    
 DAY-50
+
 //Change the date format from dd/04/yyyy to dd-Apr-yyyy.
 #include <stdio.h>
 
@@ -3128,7 +3131,8 @@ int main() {
     }
 
     return 0;
-}
+    }
+    
  DAY-51
 
  //Write a Program to take a sorted array(say nums[]) and an integer (say target) as inputs. The elements in the sorted array might be repeated. You need to print the first and last occurrence of the target and print the index of first and last occurrence. Print -1, -1 if the target is not present.
@@ -3168,8 +3172,10 @@ int main() {
     printf("Last occurrence: %d\n", last);
 
     return 0;
-}
+    }
+    
 DAY-52
+
 //Write a Program to take a sorted array arr[] and an integer x as input, find the index (0-based) of the smallest element in arr[] that is greater than or equal to x and print it. This element is called the ceil of x. If such an element does not exist, print -1. Note: In case of multiple occurrences of ceil of x, return the index of the first occurrence.
 
 #include <stdio.h>
@@ -3208,8 +3214,10 @@ int main() {
     printf("%d\n", answer);   // prints index or -1
 
     return 0;
-}
+    }
+    
 DAY-53
+
 //Write a Program to take an array of integers as input, calculate the pivot index of this array. The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right. If the index is on the left edge of the array, then the left sum is 0 because there are no elements to the left. This also applies to the right edge of the array. Print the leftmost pivot index. If no such index exists, print -1.
 #include <stdio.h>
 
@@ -3246,8 +3254,10 @@ int main() {
     // If no pivot index found
     printf("-1\n");
     return 0;
-}
+    }
+    
 DAY-54
+
 //Write a Program to take a positive integer n as input, and find the pivot integer x such that the sum of all elements between 1 and x inclusively equals the sum of all elements between x and n inclusively. Print the pivot integer x. If no such integer exists, print -1. Assume that it is guaranteed that there will be at most one pivot integer for the given input.
 
 #include <stdio.h>
@@ -3273,8 +3283,10 @@ int main() {
 
     printf("-1\n");  // No pivot found
     return 0;
-}
+    }
+    
 DAY-55
+
 //Write a program to take an integer array nums of size n, and print the majority element. The majority element is the element that appears strictly more than ⌊n / 2⌋ times. Print -1 if no such element exists. Note: Majority Element is not necessarily the element that is present most number of times.
 #include <stdio.h>
 
@@ -3318,8 +3330,10 @@ int main() {
         printf("-1\n");
 
     return 0;
-}
+    }
+
 DAY-56
+
 //Write a program to take an array arr[] of integers as input, the task is to find the next greater element for each element of the array in order of their appearance in the array. Next greater element of an element in the array is the nearest element on the right which is greater than the current element. If there does not exist next greater of current element, then next greater element for current element is -1.
 
 N.B:
@@ -3365,7 +3379,9 @@ int main() {
 
     return 0;
     }
+    
 DAY-57
+
 //Write a program to take an array arr[] of integers as input, the task is to find the previous greater element for each element of the array in order of their appearance in the array. Previous greater element of an element in the array is the nearest element on the left which is greater than the current element. If there does not exist next greater of current element, then previous greater element for current element is -1.
 
 N.B:
@@ -3412,8 +3428,10 @@ int main() {
     }
 
     return 0;
-}
+    }
+    
 DAY-58
+
 //Write a Program to take an integer array nums. Print an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 #include <stdio.h>
 
@@ -3453,8 +3471,10 @@ int main() {
     }
 
     return 0;
-}
+    }
+    
 DAY-59
+
 //Write a program to take an integer array arr and an integer k as inputs. Print the maximum sum of all the subarrays of size k.
 #include <stdio.h>
 
@@ -3499,8 +3519,10 @@ int main() {
     printf("%d\n", maxSum);
 
     return 0;
-}
+    }
+    
 DAY-60
+
 //Write a program to take an integer array arr and an integer k as inputs. The task is to find the maximum element in each subarray of size k moving from left to right. Print the maximum elements for each window separated by spaces as output.
 
 #include <stdio.h>
@@ -3555,8 +3577,10 @@ int main() {
     printf("%d", arr[deque[front]]);
 
     return 0;
-}
+    }
+    
 DAY-61
+
 //Write a program to take an integer array arr and an integer k as inputs. The task is to find the first negative integer in each subarray of size k moving from left to right. If no negative exists in a window, print "0" for that window. Print the results separated by spaces as output.
 #include <stdio.h>
 
@@ -3613,8 +3637,10 @@ int main() {
         printf("0");
 
     return 0;
-}
+    }
+
 DAY-62
+
 //Write a program to take an integer array arr as input. The task is to find the maximum sum of any contiguous subarray using Kadane's algorithm. Print the maximum sum as output. If all elements are negative, print the largest (least negative) element.
 #include <stdio.h>
 
@@ -3648,8 +3674,10 @@ int main() {
     printf("%d\n", maxSoFar);
 
     return 0;
-}
+    }
+    
 DAY-63
+
 //Write a program to take an integer array arr and an integer k as inputs. The task is to find the kth smallest element in the array. Print the kth smallest element as output.
 #include <stdio.h>
 
@@ -3697,8 +3725,10 @@ int main() {
     printf("%d\n", arr[k - 1]);  // k-th smallest after sorting
 
     return 0;
-}
+    }
+    
 DAY-64
+
 //Write a program to take a string s as input. The task is to find the length of the longest substring without repeating characters. Print the length as output.
 
 #include <stdio.h>
@@ -3732,8 +3762,10 @@ int main() {
     printf("%d\n", maxLen);
 
     return 0;
-}
+    }
+    
 DAY-65
+
 //Write a program to take two strings s and t as inputs (assume all characters are lowercase). The task is to determine if s and t are valid anagrams, meaning they contain the same characters with the same frequencies. Print "Anagram" if they are, otherwise "Not Anagram".
 #include <stdio.h>
 #include <string.h>
@@ -3771,8 +3803,10 @@ int main() {
 
     printf("Anagram\n");
     return 0;
-}
+    }
+    
 DAY-66
+
 //Write a program to take an integer array nums which contains only positive integers, and an integer target as inputs. The goal is to find two distinct indices i and j in the array such that nums[i] + nums[j] equals the target. Assume exactly one solution exists and return the indices in any order. Print the two indices separated by a space as output. If no solution exists, print "-1 -1".
 #include <stdio.h>
 
@@ -3805,8 +3839,10 @@ int main() {
     // If no solution found
     printf("-1 -1\n");
     return 0;
-}
+    }
+    
 DAY-67
+
 //Write a program to take two sorted arrays of size m and n as input. Merge both the arrays such that the merged array is also sorted. Print the merged array.
 #include <stdio.h>
 
@@ -3859,8 +3895,9 @@ int main() {
     }
 
     return 0;
-}
+    }
 DAY-68
+
 //Write a program to take an input array of size n. The array should contain all the integers between 0 to n except for one. Print that missing number
 #include <stdio.h>
 
@@ -3886,8 +3923,10 @@ int main() {
     printf("%d\n", missing);
 
     return 0;
-}
+    }
+
 DAY-69
+
 //Write a program to take an integer array as input. Only one element will be repeated. Print the repeated element. Try to find the result in one single iteration.
 #include <stdio.h>
 
@@ -3916,7 +3955,9 @@ int main() {
 
     return 0;
 }
+
 DAY-70
+
 //Write a program to take a string input. Change it to sentence case.
 
 #include <stdio.h>
@@ -3942,7 +3983,9 @@ int main() {
 
     return 0;
 }
+
 DAY-71
+
 //Write a C program that creates a text file named info.txt in write mode. The program should take the user’s name and age as input, and write them to the file using fprintf(). After writing, display a message confirming that the data was successfully saved.
 #include <stdio.h>
 
@@ -3976,7 +4019,9 @@ int main() {
 
     return 0;
 }
+
 DAY-72
+
 //Write a C program that opens an existing file (e.g., info.txt) and reads its contents using fgets(). The program should print all the lines to the console until EOF (end of file) is reached.
 #include <stdio.h>
 
@@ -4004,7 +4049,9 @@ int main() {
 
     return 0;
 }
+
 DAY-73
+
 //Read a text file and count the total number of characters, words, and lines. A word is defined as a sequence of non-space characters separated by spaces or newlines.
 #include <stdio.h>
 #include <ctype.h>
@@ -4056,7 +4103,9 @@ int main() {
 
     return 0;
 }
+
 DAY-74
+
 //Take two filenames from the user – a source file and a destination file. Copy all the content from the source file to the destination file using fgetc() and fputc().
 
 #include <stdio.h>
@@ -4101,7 +4150,9 @@ int main() {
 
     return 0;
 }
+
 DAY-75
+
 //Open an existing file in append mode and allow the user to enter a new line of text. Append the text at the end without overwriting existing content.
 #include <stdio.h>
 
@@ -4137,6 +4188,7 @@ int main() {
     }
     
 DAY-76
+
 //Ask the user for a filename. Check if it exists by trying to open it in read mode. If the file pointer is NULL, print an error message; otherwise, read and display its content.
 #include <stdio.h>
 
@@ -4167,7 +4219,9 @@ int main() {
 
     return 0;
 }
+
 DAY-77
+
 //Write a program that reads text from input.txt, converts all lowercase letters to uppercase, and writes the result to output.txt.
 #include <stdio.h>
 #include <ctype.h>
@@ -4204,7 +4258,9 @@ int main() {
 
     return 0;
 }
+
 DAY-78
+
 //Read a text file and count how many vowels and consonants are in the file. Ignore digits and special characters.
 
 #include <stdio.h>
@@ -4246,7 +4302,9 @@ int main() {
 
     return 0;
 }
+
 DAY-79
+
 //A file numbers.txt contains a list of integers separated by spaces. Read all integers, compute their sum and average, and print both.
 #include <stdio.h>
 
@@ -4282,7 +4340,9 @@ int main() {
 
     return 0;
 }
+
 DAY-80
+
 //Store multiple student records (name, roll number, marks) into a file using fprintf(). Then read them using fscanf() and display each record.
 #include <stdio.h>
 
@@ -4350,7 +4410,9 @@ int main() {
 
     return 0;
 }
+
 DAY-81
+
 //Create an enumeration for days (SUNDAY to SATURDAY) and print each day with its integer value.
 #include <stdio.h>
 
@@ -4371,7 +4433,9 @@ int main(void) {
 
     return 0;
 }
+
 DAY-82
+
 //Define an enum for traffic lights (RED, YELLOW, GREEN) and print 'Stop', 'Wait', or 'Go' based on its value.
 #include <stdio.h>
 
@@ -4402,7 +4466,9 @@ int main() {
 
     return 0;
 }
+
 DAY-83
+
 //Create an enum for months and print how many days each month has.
 #include <stdio.h>
 
@@ -4430,7 +4496,9 @@ int main() {
 
     return 0;
 }
+
 DAY-84
+
 //Define an enum with SUCCESS, FAILURE, and TIMEOUT, and print messages accordingly.
 #include <stdio.h>
 
@@ -4462,7 +4530,9 @@ int main() {
 
     return 0;
 }
+
 DAY-85
+
 //Assign explicit values starting from 10 and print them.
 #include <stdio.h>
 
@@ -4480,7 +4550,9 @@ int main() {
 
     return 0;
 }
+
 DAY-86
+
 //Use enum to represent menu choices (ADD, SUBTRACT, MULTIPLY) and perform operations using switch.
 #include <stdio.h>
 
@@ -4522,7 +4594,9 @@ int main() {
 
     return 0;
 }
+
 DAY-87
+
 //Create an enum for user roles (ADMIN, USER, GUEST) and display messages based on role.
 #include <stdio.h>
 
@@ -4560,7 +4634,9 @@ int main() {
 
     return 0;
 }
+
 DAY-88
+
 //Print all enum names and integer values using a loop.
 #include <stdio.h>
 
@@ -4583,7 +4659,9 @@ int main() {
 
     return 0;
 }
+
 DAY-89
+
 //Show that enums store integers by printing assigned values.
 #include <stdio.h>
 
@@ -4603,7 +4681,9 @@ int main() {
 
     return 0;
 }
+
 DAY-90
+
 //Define a struct with enum Gender and print person's gender.
 
 #include <stdio.h>
@@ -4646,7 +4726,9 @@ int main() {
 
     return 0;
 }
+
 DAY-91
+
 //Define a structure Student with name, roll_no, and marks, then read and print one student's data.
 #include <stdio.h>
 
@@ -4677,7 +4759,9 @@ int main() {
 
     return 0;
 }
+
 DAY-92
+
 //Store details of 5 students in an array of structures and print all.
 
 #include <stdio.h>
@@ -4719,7 +4803,9 @@ int main() {
 
     return 0;
 }
+
 DAY-93
+
 //Find and print the student with the highest marks.
 #include <stdio.h>
 
@@ -4764,7 +4850,9 @@ int main() {
 
     return 0;
 }
+
 DAY-94
+
 //Write a function that accepts a structure as parameter and prints its members.
 #include <stdio.h>
 
@@ -4801,7 +4889,9 @@ int main() {
 
     return 0;
 }
+
 DAY-95
+
 //Return a structure containing top student's details from a function.
 #include <stdio.h>
 
@@ -4857,7 +4947,9 @@ int main() {
 
     return 0;
 }
+
 DAY-96
+
 //Create Employee structure with nested Date structure for joining date and print details.
 
 #include <stdio.h>
@@ -4907,7 +4999,9 @@ int main() {
 
     return 0;
 }
+
 DAY-97
+
 //Store employee data in a binary file using fwrite() and read using fread().
 #include <stdio.h>
 
@@ -4973,6 +5067,7 @@ int main() {
 
     return 0;
     }
+    
 DAY-98
     
 //Take two structs as input and check if they are identical
@@ -5030,7 +5125,9 @@ int main() {
 
     return 0;
 }
+
 DAY-99
+
 //Use malloc() to allocate structure memory dynamically and print details.
 #include <stdio.h>
 #include <stdlib.h>
