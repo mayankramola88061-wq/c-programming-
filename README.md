@@ -2319,3 +2319,458 @@ int main() {
 
     return 0;
 }
+DAY- 38
+
+//Add two matrices.
+#include <stdio.h>
+
+int main() {
+    int r, c;
+
+    printf("Enter number of rows: ");
+    scanf("%d", &r);
+
+    printf("Enter number of columns: ");
+    scanf("%d", &c);
+
+    int A[r][c], B[r][c], Sum[r][c];
+
+    printf("Enter elements of Matrix A:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &A[i][j]);
+        }
+    }
+
+    printf("Enter elements of Matrix B:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &B[i][j]);
+        }
+    }
+
+    // Add matrices
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            Sum[i][j] = A[i][j] + B[i][j];
+        }
+    }
+
+    printf("Sum of the two matrices:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("%d ", Sum[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+//Check if a matrix is symmetric.
+
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the size of the square matrix (n x n): ");
+    scanf("%d", &n);
+
+    int a[n][n];
+
+    // Read matrix
+    printf("Enter the elements of the matrix:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    // Check symmetric
+    int symmetric = 1;  // assume true
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] != a[j][i]) {
+                symmetric = 0;
+                break;
+            }
+        }
+    }
+
+    if (symmetric)
+        printf("The matrix is symmetric.\n");
+    else
+        printf("The matrix is not symmetric.\n");
+
+    return 0;
+}
+
+DAY-39
+//Check if the elements on the diagonal of a matrix are distinct.
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the size of the square matrix: ");
+    scanf("%d", &n);
+
+    int a[n][n];
+
+    printf("Enter the elements of the matrix:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    // Check distinct diagonal elements
+    int distinct = 1;  // assume distinct unless found same
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (a[i][i] == a[j][j]) {
+                distinct = 0;
+                break;
+            }
+        }
+        if (!distinct)
+            break;
+    }
+
+    if (distinct)
+        printf("Diagonal elements are distinct.\n");
+    else
+        printf("Diagonal elements are NOT distinct.\n");
+
+    return 0;
+}
+//Find the sum of main diagonal elements for a square matrix.
+
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the size of the square matrix: ");
+    scanf("%d", &n);
+
+    int mat[n][n];
+
+    printf("Enter the elements of the matrix:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &mat[i][j]);
+        }
+    }
+
+    int sum = 0;
+
+    for (int i = 0; i < n; i++) {
+        sum += mat[i][i];  // main diagonal element
+    }
+
+    printf("Sum of main diagonal elements = %d\n", sum);
+
+    return 0;
+}
+
+DAY-40
+
+//Perform diagonal traversal of a matrix.
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the size of square matrix: ");
+    scanf("%d", &n);
+
+    int a[n][n];
+
+    printf("Enter matrix elements:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    printf("Diagonal Traversal:\n");
+
+    // Print diagonals starting from first row
+    for (int col = 0; col < n; col++) {
+        int i = 0, j = col;
+        while (i < n && j >= 0) {
+            printf("%d ", a[i][j]);
+            i++;
+            j--;
+        }
+        printf("\n");
+    }
+
+    // Print diagonals starting from last column except top element
+    for (int row = 1; row < n; row++) {
+        int i = row, j = n - 1;
+        while (i < n && j >= 0) {
+            printf("%d ", a[i][j]);
+            i++;
+            j--;
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+//Multiply two matrices.
+
+#include <stdio.h>
+
+int main() {
+    int r1, c1, r2, c2;
+
+    // Read dimensions of first matrix
+    printf("Enter rows and columns of first matrix: ");
+    scanf("%d %d", &r1, &c1
+    );
+
+    // Read dimensions of second matrix
+    printf("Enter rows and columns of second matrix: ");
+    scanf("%d %d", &r2, &c2);
+
+    // Check matrix multiplication condition
+    if (c1 != r2) {
+        printf("Matrix multiplication not possible.\n");
+        return 0;
+    }
+
+    int A[r1][c1], B[r2][c2], C[r1][c2];
+
+    // Input for first matrix
+    printf("Enter elements of first matrix:\n");
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c1; j++) {
+            scanf("%d", &A[i][j]);
+        }
+    }
+
+    // Input for second matrix
+    printf("Enter elements of second matrix:\n");
+    for (int i = 0; i < r2; i++) {
+        for (int j = 0; j < c2; j++) {
+            scanf("%d", &B[i][j]);
+        }
+    }
+
+    // Initialize result matrix with 0
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c2; j++) {
+            C[i][j] = 0;
+        }
+    }
+
+    // Matrix multiplication
+    for (int i = 0; i < r1; i++) {
+        for (int j = 0; j < c2; j++) {
+            for (int k = 0; k < c1; k++) {
+                C[i][j] += A[i][k] * B[k][j];
+            }
+        }
+    }
+
+    // Print result matrix
+    printf("Resultant matrix:\n"
+    
+DAY-41
+//Count characters in a string without using built-in length functions.
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int count = 0;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Count characters manually
+    for (int i = 0; str[i] != '\0'; i++) {
+        count++;
+    }
+
+    // Excluding the newline character added by fgets (optional)
+    if (str[count - 1] == '\n') {
+        count--;
+    }
+
+    printf("Total characters = %d\n", count);
+
+    return 0;
+}
+//Print each character of a string on a new line.
+
+#include <stdio.h>
+
+int main() {
+    char str[100];
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Print each character on a new line
+    for (int i = 0; str[i] != '\0'; i++) {
+        printf("%c\n", str[i]);
+    }
+
+    return 0;
+}
+DAY-42 
+//Count vowels and consonants in a string.
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int i, vowels = 0, consonants = 0;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    for (i = 0; str[i] != '\0'; i++) {
+        char c = str[i];
+
+        // Check lowercase and uppercase vowels
+        if (c=='A' || c=='E' || c=='I' || c=='O' || c=='U' ||
+            c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
+            vowels++;
+        }
+        else if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+            // Any alphabet that is not a vowel is a consonant
+            consonants++;
+        }
+    }
+
+    printf("Vowels: %d\n", vowels);
+    printf("Consonants: %d\n", consonants);
+
+    return 0;
+}
+//Convert a lowercase string to uppercase without using built-in functions.
+#include <stdio.h>
+
+int main() {
+    char str[100];
+
+    printf("Enter a lowercase string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Convert to uppercase manually
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            str[i] = str[i] - 32; // ASCII conversion
+        }
+    }
+
+    printf("Uppercase string: %s", str);
+    return 0;
+}
+DAY-43
+//Reverse a string.
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int i, len = 0;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    // Find length manually
+    while (str[len] != '\0' && str[len] != '\n') {
+        len++;
+    }
+
+    // Reverse and print
+    printf("Reversed string: ");
+    for (i = len - 1; i >= 0; i--) {
+        printf("%c", str[i]);
+    }
+
+    return 0;
+}
+//Check if a string is a palindrome.
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int i, j, flag = 1;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    // Set pointers i (start) and j (end)
+    for (i = 0; str[i] != '\0'; i++);
+    j = i - 1;
+
+    // Compare characters from both ends
+    for (i = 0; i < j; i++, j--) {
+        if (str[i] != str[j]) {
+            flag = 0;
+            break;
+        }
+    }
+
+    if (flag)
+        printf("The string is a palindrome.\n");
+    else
+        printf("The string is not a palindrome.\n");
+
+    return 0;
+}
+DAY-44
+//Count spaces, digits, and special characters in a string.
+#include <stdio.h>
+
+int main() {
+    char str[200];
+    int spaces = 0, digits = 0, special = 0;
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ' ')
+            spaces++;
+        else if (str[i] >= '0' && str[i] <= '9')
+            digits++;
+        else if ((str[i] >= 'A' && str[i] <= 'Z') ||
+                 (str[i] >= 'a' && str[i] <= 'z'))
+            continue; // letters are ignored
+        else
+            special++;
+    }
+
+    printf("Spaces: %d\n", spaces);
+    printf("Digits: %d\n", digits);
+    printf("Special characters: %d\n", special);
+
+    return 0;
+}
+//Replace spaces with hyphens in a string.
+#include <stdio.h>
+
+int main() {
+    char str[200];
+
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ' ')
+            str[i] = '-';
+    }
+
+    printf("String after replacing spaces: %s", str);
+
+    return 0;
+}
+DAY-45
