@@ -3454,3 +3454,491 @@ int main() {
 
     return 0;
 }
+DAY-59
+//Write a program to take an integer array arr and an integer k as inputs. Print the maximum sum of all the subarrays of size k.
+#include <stdio.h>
+
+int main() {
+    int n, k;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter k: ");
+    scanf("%d", &k);
+
+    // Edge case: if k > n, no subarray possible
+    if (k > n) {
+        printf("-1\n");
+        return 0;
+    }
+
+    int currentSum = 0;
+
+    // First window sum
+    for (int i = 0; i < k; i++) {
+        currentSum += arr[i];
+    }
+
+    int maxSum = currentSum;
+
+    // Slide the window
+    for (int i = k; i < n; i++) {
+        currentSum = currentSum - arr[i - k] + arr[i];
+        if (currentSum > maxSum)
+            maxSum = currentSum;
+    }
+
+    printf("%d\n", maxSum);
+
+    return 0;
+}
+DAY-60
+//Write a program to take an integer array arr and an integer k as inputs. The task is to find the maximum element in each subarray of size k moving from left to right. Print the maximum elements for each window separated by spaces as output.
+
+#include <stdio.h>
+
+int main() {
+    int n, k;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter k: ");
+    scanf("%d", &k);
+
+    if (k > n) {
+        printf("-1\n");
+        return 0;
+    }
+
+    int deque[n];  // stores indices
+    int front = 0, back = -1;
+
+    // Process first k elements (first window)
+    for (int i = 0; i < k; i++) {
+        while (front <= back && arr[deque[back]] <= arr[i])
+            back--;
+        deque[++back] = i;
+    }
+
+    // For the rest of windows
+    for (int i = k; i < n; i++) {
+
+        // Print max of previous window
+        printf("%d ", arr[deque[front]]);
+
+        // Remove elements that are out of this window
+        while (front <= back && deque[front] <= i - k)
+            front++;
+
+        // Remove smaller elements as they are useless
+        while (front <= back && arr[deque[back]] <= arr[i])
+            back--;
+
+        deque[++back] = i;
+    }
+
+    // Print max of last window
+    printf("%d", arr[deque[front]]);
+
+    return 0;
+}
+DAY-61
+//Write a program to take an integer array arr and an integer k as inputs. The task is to find the first negative integer in each subarray of size k moving from left to right. If no negative exists in a window, print "0" for that window. Print the results separated by spaces as output.
+#include <stdio.h>
+
+int main() {
+    int n, k;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter k: ");
+    scanf("%d", &k);
+
+    if (k > n) {
+        printf("-1\n");
+        return 0;
+    }
+
+    int negIndices[n];
+    int front = 0, back = -1;
+
+    // Process first window
+    for (int i = 0; i < k; i++) {
+        if (arr[i] < 0)
+            negIndices[++back] = i;
+    }
+
+    // Slide through the array
+    for (int i = k; i < n; i++) {
+
+        // Print first negative of previous window
+        if (front <= back)
+            printf("%d ", arr[negIndices[front]]);
+        else
+            printf("0 ");
+
+        // Remove elements that go out of the window
+        while (front <= back && negIndices[front] <= i - k)
+            front++;
+
+        // Add the new index if negative
+        if (arr[i] < 0)
+            negIndices[++back] = i;
+    }
+
+    // Print result for the last window
+    if (front <= back)
+        printf("%d", arr[negIndices[front]]);
+    else
+        printf("0");
+
+    return 0;
+}
+DAY-62
+//Write a program to take an integer array arr as input. The task is to find the maximum sum of any contiguous subarray using Kadane's algorithm. Print the maximum sum as output. If all elements are negative, print the largest (least negative) element.
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int maxEndingHere = arr[0];
+    int maxSoFar = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        // choose max: extend previous sum OR start new from arr[i]
+        if (maxEndingHere + arr[i] > arr[i])
+            maxEndingHere = maxEndingHere + arr[i];
+        else
+            maxEndingHere = arr[i];
+
+        // update global maximum
+        if (maxEndingHere > maxSoFar)
+            maxSoFar = maxEndingHere;
+    }
+
+    printf("%d\n", maxSoFar);
+
+    return 0;
+}
+DAY-63
+//Write a program to take an integer array arr and an integer k as inputs. The task is to find the kth smallest element in the array. Print the kth smallest element as output.
+#include <stdio.h>
+
+// Simple swap function
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+// Bubble sort (simple for beginners)
+void sortArray(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(&arr[j], &arr[j + 1]);
+            }
+        }
+    }
+}
+
+int main() {
+    int n, k;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter k: ");
+    scanf("%d", &k);
+
+    if (k < 1 || k > n) {
+        printf("-1\n");
+        return 0;
+    }
+
+    sortArray(arr, n);
+
+    printf("%d\n", arr[k - 1]);  // k-th smallest after sorting
+
+    return 0;
+}
+DAY-64
+//Write a program to take a string s as input. The task is to find the length of the longest substring without repeating characters. Print the length as output.
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[1000];
+    
+    printf("Enter the string: ");
+    scanf("%[^\n]%*c", s);  // read full line including spaces
+
+    int freq[256] = {0};  // frequency of characters
+    int left = 0, maxLen = 0;
+
+    for (int right = 0; s[right] != '\0'; right++) {
+        char c = s[right];
+        freq[(unsigned char)c]++;
+
+        // If character repeats, shrink window
+        while (freq[(unsigned char)c] > 1) {
+            freq[(unsigned char)s[left]]--;
+            left++;
+        }
+
+        // Update maximum length
+        int windowLen = right - left + 1;
+        if (windowLen > maxLen)
+            maxLen = windowLen;
+    }
+
+    printf("%d\n", maxLen);
+
+    return 0;
+}
+DAY-65
+//Write a program to take two strings s and t as inputs (assume all characters are lowercase). The task is to determine if s and t are valid anagrams, meaning they contain the same characters with the same frequencies. Print "Anagram" if they are, otherwise "Not Anagram".
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[1000], t[1000];
+
+    printf("Enter string s: ");
+    scanf("%s", s);
+
+    printf("Enter string t: ");
+    scanf("%s", t);
+
+    // If lengths differ, they cannot be anagrams
+    if (strlen(s) != strlen(t)) {
+        printf("Not Anagram\n");
+        return 0;
+    }
+
+    int freq[26] = {0};
+
+    // Count characters of s and t
+    for (int i = 0; s[i] != '\0'; i++) {
+        freq[s[i] - 'a']++;
+        freq[t[i] - 'a']--;
+    }
+
+    // Check if all frequencies become zero
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] != 0) {
+            printf("Not Anagram\n");
+            return 0;
+        }
+    }
+
+    printf("Anagram\n");
+    return 0;
+}
+DAY-66
+//Write a program to take an integer array nums which contains only positive integers, and an integer target as inputs. The goal is to find two distinct indices i and j in the array such that nums[i] + nums[j] equals the target. Assume exactly one solution exists and return the indices in any order. Print the two indices separated by a space as output. If no solution exists, print "-1 -1".
+#include <stdio.h>
+
+int main() {
+    int n, target;
+
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int nums[n];
+
+    printf("Enter %d positive integers:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &nums[i]);
+    }
+
+    printf("Enter target: ");
+    scanf("%d", &target);
+
+    // Brute-force O(n^2)
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (nums[i] + nums[j] == target) {
+                printf("%d %d\n", i, j);
+                return 0; // exactly one solution exists
+            }
+        }
+    }
+
+    // If no solution found
+    printf("-1 -1\n");
+    return 0;
+}
+DAY-67
+//Write a program to take two sorted arrays of size m and n as input. Merge both the arrays such that the merged array is also sorted. Print the merged array.
+#include <stdio.h>
+
+int main() {
+    int m, n;
+
+    printf("Enter size of first array: ");
+    scanf("%d", &m);
+    int arr1[m];
+
+    printf("Enter %d sorted elements:\n", m);
+    for (int i = 0; i < m; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Enter size of second array: ");
+    scanf("%d", &n);
+    int arr2[n];
+
+    printf("Enter %d sorted elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    int merged[m + n];
+    int i = 0, j = 0, k = 0;
+
+    // Merge using two pointers
+    while (i < m && j < n) {
+        if (arr1[i] <= arr2[j]) {
+            merged[k++] = arr1[i++];
+        } else {
+            merged[k++] = arr2[j++];
+        }
+    }
+
+    // Copy remaining elements
+    while (i < m) {
+        merged[k++] = arr1[i++];
+    }
+
+    while (j < n) {
+        merged[k++] = arr2[j++];
+    }
+
+    // Print merged array
+    for (int x = 0; x < m + n; x++) {
+        printf("%d", merged[x]);
+        if (x != m + n - 1) printf(" ");
+    }
+
+    return 0;
+}
+DAY-68
+//Write a program to take an input array of size n. The array should contain all the integers between 0 to n except for one. Print that missing number
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    int sum = 0;
+
+    printf("Enter %d elements (0 to %d with one missing):\n", n, n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+    }
+
+    // Expected sum of numbers from 0 to n
+    int total = n * (n + 1) / 2;
+
+    int missing = total - sum;
+
+    printf("%d\n", missing);
+
+    return 0;
+}
+DAY-69
+//Write a program to take an integer array as input. Only one element will be repeated. Print the repeated element. Try to find the result in one single iteration.
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d integers (one will be repeated):\n", n);
+
+    // XOR of all array elements
+    int xorAll = 0;
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        xorAll ^= arr[i];       // XOR the element
+    }
+
+    // XOR numbers from 0 to n-2
+    for (int i = 0; i <= n - 2; i++) {
+        xorAll ^= i;
+    }
+
+    // Remaining value is the repeated number
+    printf("%d\n", xorAll);
+
+    return 0;
+}
+DAY-70
+//Write a program to take a string input. Change it to sentence case.
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char s[1000];
+
+    printf("Enter a string: ");
+    scanf("%[^\n]%*c", s);   // read full line including spaces
+
+    // Convert first character to uppercase (if alphabet)
+    if (s[0] != '\0') {
+        s[0] = toupper(s[0]);
+    }
+
+    // Convert all other characters to lowercase
+    for (int i = 1; s[i] != '\0'; i++) {
+        s[i] = tolower(s[i]);
+    }
+
+    printf("%s\n", s);
+
+    return 0;
+}
